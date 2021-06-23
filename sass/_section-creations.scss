@@ -1,0 +1,228 @@
+.section-creations {
+    width: 100%;
+    padding: 5rem 1.5rem 10rem 1.5rem;
+    position: relative;
+    @include media-lg {
+        padding: 8rem 8rem 9rem 8rem;
+    }
+    @include media-xl {
+        padding: 10rem 10.3rem 11rem 10.3rem;
+    }
+    .creation-heading {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 300;
+        font-size: 2rem;
+        font-family: 'Josefin Sans', sans-serif;
+        @include media-lg {
+            font-size: 2.5rem;
+            justify-content: space-between;
+        }
+
+        h3 {
+            margin: 0;
+            text-transform: uppercase;
+        }
+        
+        button {
+            position: absolute;
+            padding: .6rem 2.5rem;
+            text-transform: uppercase;
+            font-size: 1rem;
+            bottom: 5.5rem;
+            background: 0;
+            border: 1px solid #000;
+            outline: 0;
+            @include media-lg {
+                padding: .8rem 3.5rem;
+                position: static;
+                &:hover {
+                    background: $Black;
+                    cursor: pointer;
+                    color: $White;
+                }
+            }
+        }
+    }
+    .grid-container {
+        width: 100%;
+        padding: 3rem  0 0 0;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1.5rem;
+        color: $White;
+        @include media-md {
+            grid-template-columns: repeat(2, 1fr );
+            grid-template-rows: repeat(4, 1fr );
+        }
+        @include media-lg {
+            padding: 5rem 0 0 0;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr );
+            grid-gap: 1.9rem;
+        }
+
+        .item {
+            height: 120px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-end;
+            padding: 1.5rem;
+            background-repeat: no-repeat;
+            
+            @include media-lg {
+                height: 450px;
+                padding: 0 0 2rem 2.5rem;
+                background-size: cover;
+                cursor: pointer;
+            }
+            @include media-xl {
+                background-size: contain;
+            }
+            span {
+                width: 9rem;
+                display: block;
+                text-transform: uppercase;
+                font-size: 1.5rem;
+                @include media-xl {
+                    width: 100%;
+                    font-size: 2rem;
+                    line-height: 2rem;
+                }
+            }
+        }
+
+        .item-one {
+            background-image: 
+            linear-gradient(to right,#0000004d, #69696965),
+            url(../images/mobile/image-deep-earth.jpg);
+            @include media-lg {
+                background-image: 
+                linear-gradient(to right,#0000004d, #69696965),
+                url(../images/desktop/image-deep-earth.jpg);   
+                &:hover {
+                    background-image:
+                    linear-gradient(to right,#ffffffd8, #ffffffc0),
+                    url(../images/desktop/image-deep-earth.jpg);   
+                    color: $Black;
+                } 
+            }
+        }
+        .item-two {
+            background-image: 
+            linear-gradient(to right,#0000004d, #69696965),
+            url(../images/mobile/image-night-arcade.jpg);
+            @include media-lg {
+                background-image: 
+                linear-gradient(to right,#0000004d, #69696965),
+                url(../images/desktop/image-night-arcade.jpg);    
+                &:hover {
+                    background-image:
+                    linear-gradient(to right,#ffffffd8, #ffffffc0),
+                    url(../images/desktop/image-night-arcade.jpg);    
+                    color: $Black;
+                } 
+            }
+        }
+        .item-three {
+            background-image: 
+            linear-gradient(to right,#0000004d, #69696965),
+            url(../images/mobile/image-soccer-team.jpg);
+            @include media-lg {
+                background-image: 
+                linear-gradient(to right,#0000004d, #69696965),
+                url(../images/desktop/image-soccer-team.jpg);  
+                &:hover {
+                    background-image:
+                    linear-gradient(to right,#ffffffd8, #ffffffc0),
+                    url(../images/desktop/image-soccer-team.jpg);  
+                    color: $Black;
+                }   
+            }
+        }
+        .item-four {
+            background-image: 
+            linear-gradient(to right,#0000004d, #69696965),
+            url(../images/mobile/image-grid.jpg);
+            @include media-lg {
+                background-image: 
+                linear-gradient(to right,#0000004d, #69696965),
+                url(../images/desktop/image-grid.jpg);    
+                &:hover {
+                    background-image:
+                    linear-gradient(to right,#ffffffd8, #ffffffc0),
+                    url(../images/desktop/image-grid.jpg);    
+                    color: $Black;
+                }   
+            }
+        }
+        .item-five {
+            background-image: 
+            linear-gradient(to right,#0000004d, #69696965),
+            url(../images/mobile/image-from-above.jpg);
+            @include media-lg {
+                background-image: 
+                linear-gradient(to right,#0000004d, #69696965),
+                url(../images/desktop/image-from-above.jpg);   
+                &:hover {
+                    background-image:
+                    linear-gradient(to right,#ffffffd8, #ffffffc0),
+                    url(../images/desktop/image-from-above.jpg);   
+                    color: $Black;
+                }   
+            }
+        }
+        .item-six {
+            background-image: 
+            linear-gradient(to right,#0000004d, #69696965),
+            url(../images/mobile/image-pocket-borealis.jpg);
+            @include media-lg {
+                background-image: 
+                linear-gradient(to right,#0000004d, #69696965),
+                url(../images/desktop/image-pocket-borealis.jpg);   
+                &:hover {
+                    background-image:
+                    linear-gradient(to right,#ffffffd8, #ffffffc0),
+                    url(../images/desktop/image-pocket-borealis.jpg);   
+                    color: $Black;
+                }    
+            }
+        }
+        .item-seven {
+            background-image: 
+            linear-gradient(to right,#0000004d, #69696965),
+            url(../images/mobile/image-curiosity.jpg);
+            @include media-lg {
+                background-image: 
+                linear-gradient(to right,#0000004d, #69696965),
+                url(../images/desktop/image-curiosity.jpg); 
+                &:hover {
+                    background-image:
+                    linear-gradient(to right,#ffffffd8, #ffffffc0),
+                    url(../images/desktop/image-curiosity.jpg); 
+                    color: $Black;
+                }    
+            }
+        }
+        .item-eight {
+            background-image: 
+            linear-gradient(to right,#0000004d, #69696965),
+            url(../images/mobile/image-fisheye.jpg);
+            @include media-lg {
+                background-image: 
+                linear-gradient(to right,#0000004d, #69696965),
+                url(../images/desktop/image-fisheye.jpg);  
+                &:hover {
+                    background-image:
+                    linear-gradient(to right,#ffffffd8, #ffffffc0),
+                    url(../images/desktop/image-fisheye.jpg);  
+                    color: $Black;
+                }     
+            }
+        }
+
+    }
+}

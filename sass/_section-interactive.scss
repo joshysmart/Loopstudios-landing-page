@@ -1,0 +1,57 @@
+.section-interactive {
+    width: 100%;
+    padding: 6rem 1.5rem 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    @include media-lg {
+        padding: 8rem 8rem 0 8rem;
+        flex-direction: row;
+        position: relative;
+        overflow: hidden;
+    }
+    @include media-xl {
+        padding: 10rem 10.3rem 0 10.3rem;
+    }
+
+    aside {
+        img {
+            width: 100%;
+        }
+    }
+    article {
+        padding: 3rem 1rem 0 1rem;
+        text-align: center;
+        @include media-lg {
+            position: absolute;
+            background: $White;
+            text-align: left;
+            padding: 6rem 5rem 0 6rem;
+            width: 620px;
+            height: 350px;
+            top: 55%;
+            left: 45%;
+        }
+        @include media-xl {
+            top: 52%;
+            left: 51%;
+        }
+        h2 {
+            margin: 0;
+            text-transform: uppercase;
+            line-height: 2rem;
+            font-size: 2rem;
+            font-weight: 300;
+            font-family: 'Josefin Sans', sans-serif;
+            @include media-lg {
+                font-size: 3rem;
+                line-height: 3rem;
+            }
+        }
+        p {
+            font-size: 1rem;
+            line-height: 1.5rem;
+            font-weight: 300;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+    }
+}

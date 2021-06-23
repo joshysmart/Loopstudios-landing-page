@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
+$White: #ffffff;
+$Black: #000000;
+$Dark-Gray: #8c8c8c;
+$Very-Dark-Gray: #696969;
+
+@mixin media-xl {
+    @media only screen and (min-width:1440px) {
+        @content;
+    }
+}
+@mixin media-lg {
+    @media only screen and (min-width:1280px) {
+        @content;
+    }
+}
+@mixin media-md {
+    @media only screen and (min-width:760px) {
+        @content;
+    }
+}
+
+@mixin nav-links {
+    color: $White;
+    text-decoration: none;
+    @include hover();
+}
+
+@mixin hover {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &::after {
+        width: 0;
+        height: 2px;
+        background: #fff;
+        position: absolute;
+        content: '';
+        bottom: -10px;
+        transition: all .4s ease-in-out;
+    }    
+    &:hover {
+        &::after {
+            width: 25px;
+        }
+    }
+}
